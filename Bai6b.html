@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        .boder {
+            border: 1px solid black;
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
+        }
+
+        .form-container {
+            width: 600px;
+            margin: 50px auto;
+            padding: 0;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+           
+
+        }
+
+        td {
+            padding: 10px;
+            vertical-align: top;
+        }
+
+        th, td {
+       
+
+        }
+
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        input[type="file"] {
+            margin-top: 10px;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid black;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boder">
+        <h1>CONTACT US</h1>
+        <div class="container">
+            <form action="/submit" method="POST">
+                <table>
+                    <tr>
+                        <td>To:</td>
+                        <td><input type="text" name="to" value="Example Cafe" required readonly></td>
+                        <td style ="width: 150px;" ></td>
+                        <td style ="width: 150px;" ></td>
+                    </tr>
+                    <tr>
+                        <td>Your email:</td>
+                        <td><input type="email" name="email" required></td>
+                    </tr>
+                    <tr>
+                        <td>Message:</td>
+                        <td colspan ="2"><textarea id="message" name="message" required></textarea></td>
+                        <td style ="width: 150px;" ></td>
+
+                    </tr>
+                    <tr>
+                        <td><label for="file">Attach File:</label></td>
+                        <td><input type="file" id="file" name="file"></td>
+                    </tr>
+                </table>
+               
+            </form>
+        </div>
+        <br>
+        <div class="container">
+            <form action="/submit" method="POST">
+                <table>
+                    <tr>
+                        <div>
+                            <td style ="width:170px"><label for="how">How did you here of us</label></td>
+                            <td><select id="how" name="how">
+                                    <option value="Google">Google</option>
+                                    <option value="CocCoc">CocCoc</option>
+                                    <option value="Safari">Safari</option>
+                                </select>
+                        </div>
+                        </td>
+                    <tr>
+                        <tr> 
+                            <td> <label>Newsletter:</label>
+                            </td>
+                            <td> <input type="checkbox" id="checkboxx" name="letter" value="checkboxx">
+                                <label for="checkboxx">Ensure this box is checked if you would like to receive email updates</label>
+                            </td>
+                        </tr>
+                </table>
+                </form>
+
+        </div>
+        <br>
+
+    </div>
+</body>
+
+</html>
